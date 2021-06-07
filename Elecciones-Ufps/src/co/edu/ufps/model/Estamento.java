@@ -17,7 +17,7 @@ public class Estamento{ //implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	@Column
+	@ManyToOne
 	private int eleccion;
 	@Column
 	private String descripcion;
