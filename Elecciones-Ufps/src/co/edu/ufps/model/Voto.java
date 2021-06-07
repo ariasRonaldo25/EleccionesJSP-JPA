@@ -25,11 +25,11 @@ public class Voto {
 	private String uuid;
 	@Column
 	private String enlace;
-	@Column
+	@ManyToOne
 	private int estamento;
-	@Column
+	@OneToOne
 	private int candidato;
-	@Column
+	@OneToOne
 	private int votante;
 	
 	
