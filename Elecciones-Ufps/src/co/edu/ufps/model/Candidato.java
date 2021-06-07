@@ -23,7 +23,7 @@ public class Candidato { //implements Serializable {
 	private String nombre;
 	@Column
 	private String apellido;
-	@Column
+	@ManyToOne
 	private Integer eleccion;
 	@Column
 	private Integer numero;
