@@ -21,9 +21,9 @@ public class Votante {
 	private String email;
 	@Column
 	private String documento;
-	@Column
+	@OneToOne
 	private int tipoDocumento;
-	@Column
+	@ManyToOne
 	private int eleccion;
 	public Votante() {
 		super();
